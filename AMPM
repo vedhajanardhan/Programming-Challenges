@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class L4_02_AMPM {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int hour = sc.nextInt();
+
+        if (hour >= 0 && hour < 12) {
+            System.out.println("AM");
+        } else if (hour >= 12 && hour <= 23) {
+            System.out.println("PM");
+        } else {
+            System.out.println("Invalid Time");
+        }
+
+        sc.close();
+    }
+}
