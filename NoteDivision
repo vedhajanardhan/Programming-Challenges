@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class L3_03_NoteDivision {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int amount = sc.nextInt();
+
+        if (amount % 100 == 0) {
+            System.out.println("Can be divided into 2000/500/100 notes");
+        } else {
+            System.out.println("Cannot be divided into 2000/500/100 notes");
+        }
+
+        sc.close();
+    }
+}
