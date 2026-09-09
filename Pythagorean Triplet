@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class L5_02_PythagoreanTriplet {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        int largest = Math.max(a, Math.max(b, c));
+
+        int x;
+        int y;
+
+        if (largest == a) {
+            x = b;
+            y = c;
+        } else if (largest == b) {
+            x = a;
+            y = c;
+        } else {
+            x = a;
+            y = b;
+        }
+
+        if (x * x + y * y == largest * largest) {
+            System.out.println("Pythagorean Triplet");
+        } else {
+            System.out.println("Not a Pythagorean Triplet");
+        }
+
+        sc.close();
+    }
+}
