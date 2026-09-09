@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class L5_04_Century {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int year = sc.nextInt();
+
+        int century = (year + 99) / 100;
+
+        System.out.println("Century: " + century);
+
+        sc.close();
+    }
+}
